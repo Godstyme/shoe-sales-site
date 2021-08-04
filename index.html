@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOE SALES</title>
+  <link rel="stylesheet" href="assets/build/style.css">
+  <link rel="stylesheet" href="assets/styles/animate.css">
+  <link rel="stylesheet" href="assets/styles/app.css">
+</head>
+<body>
+  
+<header>
+  <nav class="bg-gray-200 py-1"> 
+    <div class="px-20 md\:px-0">
+      <div class="flex justify-between">
+        <div class="flex">
+          <div>
+            <a href="" class="flex items-center py-4 px-3">
+              <svg class="h-6 w-6 text-blue-800 mr-1" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+              <span class="font-bold">Brand</span>
+            </a>
+          </div>
+          <div class="flex items-center space-x-8 hidden md:flex">
+            <a href="" class="py-4 px-3 hover:text-gray-300 transition duration-300">Home</a>
+            <a href="" class="py-4 px-3 hover:text-gray-300 transition duration-300">About</a>
+            <a href="" class="py-4 px-3 hover:text-gray-300 transition duration-300">Service</a>
+            <a href="" class="py-4 px-3 hover:text-gray-300 transition duration-300">Contact Us</a>
+          </div>
+        </div>
+        <div class="flex items-center space-x-8 hidden md:flex">
+          <a href="">Sign Up</a>
+          <a href="">Log in</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button class="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======mobile here========  -->
+   
+    <div class="mobile-menu hidden md:hidden">
+     <div class="text-center">
+      <a href="" class="block py-2 text-sm hover:bg-gray-200">Home</a>
+      <a href="" class="block py-2 text-sm hover:bg-gray-200">About</a>
+      <a href="" class="block py-2 text-sm hover:bg-gray-200">Service</a>
+      <a href="" class="block py-2 text-sm hover:bg-gray-200">Contact Us</a>
+     </div>
+     <div class="text-center py-4 space-x-8">
+       <a href="" class="py-2 text-sm hover:bg-gray-200">Sign Up</a>
+       <a href="" class="py-2 text-sm hover:bg-gray-200">Log in</a>
+     </div>
+    </div>
+  </nav>
+</header>
+
+<section>
+  <!-- <div class="text-3xl bg-gradient-to-l md:bg-gradient-to-r h-700 bg-red-300 bg-center" data-wow-duration="1s" style="background: url(assets/imgs/bg.jpg);">
+    hello
+  </div> -->
+  <div class="carousel relative shadow-2xl bg-white">
+    <div class="carousel-inner relative overflow-hidden w-full">
+      <!--Slide 1-->
+      <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+      <div class="carousel-item absolute opacity-0" style="height:50vh;">
+        <div class="block bg-no-repeat bg-center bg-auto md:bg-contain  h-full w-full bg-indigo-500 text-white text-5xl text-center" style="background: url(assets/imgs/bg.jpg);">Slide 1</div>
+      </div>
+      <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+      <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+      
+      <!--Slide 2-->
+      <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0" style="height:50vh;">
+        <div class="block bg-no-repeat bg-center bg-auto md:bg-contain  h-full w-full bg-orange-500 text-white text-5xl text-center" style="background: url(assets/imgs/bg2.jpg);">Slide 2</div>
+      </div>
+      <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+      <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+      
+      <!--Slide 3-->
+      <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0" style="height:50vh;">
+        <div class="block bg-no-repeat bg-center bg-auto md:bg-contain  h-full w-full bg-green-500 text-white text-5xl text-center" style="background: url(assets/imgs/bg3.jpg);">Slide 3</div>
+		</div>
+		<label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+		<label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+		<!-- Add additional indicators for each slide-->
+		<ol class="carousel-indicators">
+			<li class="inline-block mr-3">
+				<label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+			</li>
+			<li class="inline-block mr-3">
+				<label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+			</li>
+			<li class="inline-block mr-3">
+				<label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+			</li>
+		</ol>
+		
+	</div>
+</div>
+</section>
+
+<section class="pt-10 bg-gray-200">
+  <div class="grid grid-cols-4 justify-center space-x-8 py-8 px-20 wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+    <div class="flex relative  bg-white-100 p-2 cursor-pointer cursor-pointer">
+      <img src="assets/imgs/shoe18.jpg" class="absolute inset-0 w-full h-full object-cover object-center" alt="show one">
+      <div class="dark:bg-gray-800 dark:text-white px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><del class="float-left">$150</del><span class="float-right">$200</span></h2>
+        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 clear-left">NIKE AIR MAX</h1>
+        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+      </div>
+    </div>
+    <div class="flex relative  bg-white-100 p-2 cursor-pointer">
+      <img src="assets/imgs/shoe24.jpg" class="absolute inset-0 w-full h-full object-cover object-center" alt="show one">
+      <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><del class="float-left">$150</del><span class="float-right">$200</span></h2>
+        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 clear-left">NIKE AIR MAX</h1>
+        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+      </div>
+    </div>
+    <div class="flex relative  bg-white-100 p-2 cursor-pointer">
+      <img src="assets/imgs/shoe6.jpg" class="absolute inset-0 w-full h-full object-cover object-center" alt="show one">
+      <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><del class="float-left">$150</del><span class="float-right">$200</span></h2>
+        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 clear-left">NIKE AIR MAX</h1>
+        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+      </div>
+    </div>
+    <div class="flex relative  bg-white-100 p-2 cursor-pointer">
+      <img src="assets/imgs/shoe12.jpg" class="absolute inset-0 w-full h-full object-cover object-center" alt="show one">
+      <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><del class="float-left">$150</del><span class="float-right">$200</span></h2>
+        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 clear-left">NIKE AIR MAX</h1>
+        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-4 justify-center space-x-8 py-8 px-20 bg-gray-200 wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s">
+    <div class="flex relative  bg-white-100 p-2 cursor-pointer">
+      <img src="assets/imgs/shoe4.webp" class="absolute inset-0 w-full h-full object-cover object-center" alt="show one">
+      <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><del class="float-left">$150</del><span class="float-right">$200</span></h2>
+        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 clear-left">NIKE AIR MAX</h1>
+        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+      </div>
+    </div>
+    <div class="flex relative  bg-white-100 p-2 cursor-pointer">
+      <img src="assets/imgs/shoe23.jpg" class="absolute inset-0 w-full h-full object-cover object-center" alt="show one">
+      <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><del class="float-left">$150</del><span class="float-right">$200</span></h2>
+        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 clear-left">NIKE AIR MAX</h1>
+        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+      </div>
+    </div>
+    <div class="flex relative  bg-white-100 p-2 cursor-pointer">
+      <img src="assets/imgs/shoe25.jpg" class="absolute inset-0 w-full h-full object-cover object-center" alt="show one">
+      <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><del class="float-left">$150</del><span class="float-right">$200</span></h2>
+        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 clear-left">NIKE AIR MAX</h1>
+        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+      </div>
+    </div>
+    <div class="flex relative  bg-white-100 p-2 cursor-pointer">
+      <img src="assets/imgs/shoe9.jpg" class="absolute inset-0 w-full h-full object-cover object-center" alt="show one">
+      <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><del class="float-left">$150</del><span class="float-right">$200</span></h2>
+        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 clear-left">NIKE AIR MAX</h1>
+        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer>
+  <div class="flex justify-center space-x-8 py-4 bg-gray-800 font-white-900">
+    <div>Designed & Built By Godstime Onyibe &hearts; &#124; Copyrights &copy; <span id="tradeMarkTime"></span> All rights reserved</div>
+    <div>
+      <a href="https://web.facebook.com/Godstimeonyibelawrence" target="_blank" class="social-handle"><i class="fab fa-facebook fa-1x"></i></a>
+      <a href="https://twitter.com/GodstimeOnyibe" target="_blank" class="social-handle"><i class="fab fa-twitter fa-1x"></i></a>
+      <a href="https://www.linkedin.com/in/godstime-onyibe-357523181/" target="_blank" class="social-handle"><i class="fab fa-linkedin fa-1x"></i></a>
+      <a href="https://github.com/Godstyme" target="_blank" class="social-handle"><i class="fab fa-github fa-1x"></i></a>
+      <a href="https://www.instagram.com/godstime_onyibe/" target="_blank" class="social-handle"><i class="fab fa-instagram fa-1x">j</i></a>
+    </div>
+  </div>
+</footer>
+
+  <script src="assets/js/wow.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+     wow = new WOW({
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+      })
+      wow.init();
+  </script>
+</body>
+</html>
